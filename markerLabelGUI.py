@@ -24,9 +24,9 @@ path=os.path.dirname(os.path.abspath(__file__)) # get current path to use as def
 # --------------------------------------------------------------------------- #
 
 # File paths
-modelpath = os.path.join(path,'data','model_sim_add9_2020-09-15.ckpt')
-trainvalpath = os.path.join(path,'data','trainingvals_sim_add9_2020-09-15.pickle')
-markersetpath = os.path.join(path,'data','MarkerSet.xml')
+modelpath = os.path.join(path,'dl_data','model_2022-12-20.ckpt')
+trainvalpath = os.path.join(path,'dl_data','trainingvals_2022-12-20.pickle')
+markersetpath = os.path.join(path,'dl_data','MarkerSet_DL.xml')
 
 # Other
 gapfillsize = 24 # Size of gaps to fill with interpolated data when exporting

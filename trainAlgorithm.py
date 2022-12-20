@@ -21,14 +21,14 @@ import automarkerlabel as aml
 
 
 # Folder where trained model should be saved
-fld = os.path.join('.','data')
+fld = os.path.join('.','dl_data')
 # Full path to .pickle file containing simualted trajetory training data or folder
 # containing labelled .c3d files to use as training data
-datapath = os.path.join(fld,'simulatedTrajectories.pickle')
+datapath = os.path.join(fld,'righties')
 # Path to .xml file of OpenSim marker set
-markersetpath = os.path.join(fld,'MarkerSet.xml')
+markersetpath = os.path.join(fld,'MarkerSet_DL.xml')
 
-fs = 240 # Sampling frequency of training data
+fs = 360 # Sampling frequency of training data
 num_epochs = 10 # Number of epochs to train for (default=10)
 # Path to a .ckpt file of a previously trained neural network if using transfer learning.
 # Set to None if not using a previous model.
@@ -44,8 +44,8 @@ contFromTemp = False
 # --- Parameters required if using existing labelled c3ds as training data --- #
 windowSize = 120  # Desired size of data windows (default=120)
 # Markers to use to align person such that they face +x. Suggest acromions or pelvis markers.
-alignMkR = 'RAC'
-alignMkL = 'LAC'
+alignMkR = 'RSHO'
+alignMkL = 'LSHO'
 # --------------------------------------------------------------------------- #
 
 # Run training
