@@ -1,0 +1,40 @@
+name: auto_label
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python==3.8
+  - Brotli
+  - cffi
+  - click
+  - dash
+  - dash-bootstrap-components
+  - dash-core-components
+  - dash-html-components
+  - dash-renderer
+  - dash-table
+  - Flask
+  - Flask-Compress
+  - future
+  - hdf5
+  - ipywidgets
+  - itsdangerous
+  - Jinja2
+  - MarkupSafe
+  - numpy
+  - pandas
+  - plotly
+  - pycparser
+  - python-dateutil
+  - pytz
+  - retrying
+  - scikit-learn
+  - scipy
+  - six
+  - Werkzeug
+  - openssl
+  - pip
+  - pip:
+     - torch==1.13.1
+     - mydcc
+prefix: C:\Users\kylew\anaconda3

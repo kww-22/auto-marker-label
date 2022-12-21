@@ -42,7 +42,7 @@ tempCkpt = None
 contFromTemp = False
 
 # --- Parameters required if using existing labelled c3ds as training data --- #
-windowSize = 120  # Desired size of data windows (default=120)
+windowSize = 180  # Desired size of data windows (default=120)
 # Markers to use to align person such that they face +x. Suggest acromions or pelvis markers.
 alignMkR = 'RSHO'
 alignMkL = 'LSHO'
