@@ -24,7 +24,7 @@ import automarkerlabel as aml
 fld = os.path.join('.','dl_data')
 # Full path to .pickle file containing simualted trajetory training data or folder
 # containing labelled .c3d files to use as training data
-datapath = os.path.join(fld,'righties')
+datapath = os.path.join(fld,'models')
 # Path to .xml file of OpenSim marker set
 markersetpath = os.path.join(fld,'MarkerSet_DL.xml')
 

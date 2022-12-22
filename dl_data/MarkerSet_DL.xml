@@ -260,6 +260,18 @@
 				<!--The fixed location of the station expressed in its parent frame.-->
 				<location>-0.038942891264040047 -0.089764778476550303 0.00013769968418301916</location>
 			</Marker>
+			<Marker name="RHEE">
+				<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
+				<socket_parent_frame>/bodyset/toes_r</socket_parent_frame>
+				<!--The fixed location of the station expressed in its parent frame.-->
+				<location>-0.19972495950272112 0.057141745993073409 -0.008785869801688731</location>
+			</Marker>
+			<Marker name="LHEE">
+				<!--Path to a Component that satisfies the Socket 'parent_frame' of type PhysicalFrame (description: The frame to which this station is fixed.).-->
+				<socket_parent_frame>/bodyset/toes_l</socket_parent_frame>
+				<!--The fixed location of the station expressed in its parent frame.-->
+				<location>-0.19278200061775291 0.047006488138956762 0.0055417851126953882</location>
+			</Marker>
 		</objects>
 		<groups />
 	</MarkerSet>

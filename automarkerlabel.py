@@ -556,14 +556,14 @@ def import_labelled_c3ds(filelist,markers,alignMkR,alignMkL,windowSize):
             pts = align(pts,markers.index(alignMkR),markers.index(alignMkL))
             
         # Filter with 2nd order, low-pass Butterworth at filtfreq Hz 
-        b, a = signal.butter(2,filtfreq,btype='low',fs=fs) 
-        for k in range(3):
-            inan = np.isnan(pts[:,:,k])
-            df = pd.DataFrame(pts[:,:,k])
-            df = df.interpolate(axis=0,limit_direction='both')
-            dummy = signal.filtfilt(b,a,df.to_numpy(),axis=0).copy()
-            dummy[inan] = np.nan
-            pts[:,:,k] = dummy
+        # b, a = signal.butter(2,filtfreq,btype='low',fs=fs) 
+        # for k in range(3):
+        #     inan = np.isnan(pts[:,:,k])
+        #     df = pd.DataFrame(pts[:,:,k])
+        #     df = df.interpolate(axis=0,limit_direction='both')
+        #     dummy = signal.filtfilt(b,a,df.to_numpy(),axis=0).copy()
+        #     dummy[inan] = np.nan
+        #     pts[:,:,k] = dummy
         data_segs.append(torch.from_numpy(pts))
     
     windowIdx = window_data(data_segs,windowSize,num_mks)
